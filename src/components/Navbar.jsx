@@ -4,10 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon, BookOpenIcon, BookmarkIcon } from '@her
 
 
 const navigation = [
-  { name: 'Quiz', href: '#', current: true },
-  { name: 'Biographie', href: '#', current: false },
-  { name: 'Podcast', href: '#', current: false },
-  { name: 'Impressum', href: '#', current: false },
+  { name: 'Quiz', href: 'quiz', current: true },
+  { name: 'Biographie', href: 'bio', current: true },
+  { name: 'Podcast', href: 'overview', current: false },
+  { name: 'Impressum', href: 'impressum', current: false },
 ]
 
 function classNames(...classes) {
@@ -42,6 +42,7 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={HandleClick}
                         className={classNames(
                           item.current ? 'bg-gradient-to-r from-red-400 to-blue-500 ... text-white' : 'text-gray-300 bg-gradient-to-r from-gray-700 to-gray-500 ... hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -140,4 +141,9 @@ export default function Example() {
       )}
     </Disclosure>
   )
+}
+
+function HandleClick() {
+  item.current = true
+  console.log(item.current)
 }

@@ -16,8 +16,9 @@ function App() {
             <Route path="/" element={<Quiz/>}/>
             <Route path="/bio" element={<Biographie/>}/>
             <Route path="/impressum" element={<Impressum/>}/>
-            <Route path="/overwiev" element={<Zusammenfassung/>}/>
+            <Route path="/overview" element={<Zusammenfassung/>}/>
             <Route path="/*" element={<NoPage/>}/>
+            <Route path="/quiz" element={<Quiz/>}/>
           </Routes>
         </BrowserRouter>
       </div>
