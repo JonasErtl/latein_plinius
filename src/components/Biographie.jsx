@@ -1,8 +1,11 @@
 import React from 'react'
+import Animation from './Animation'
 
 const Biographie = () => {
   return (
-    <div>Biographie</div>
+    <div>
+     <Animation/>
+    </div>
   )
 }
 

@@ -1,17 +1,12 @@
 import React from 'react'
-
+import QuizCard from './Quiz-Components/QuizCard'
 const Quiz = () => {
   return (
     <div>
-      <p>Quiz</p>
-      <button onClick={HandleClick}>Start Quiz</button>
+      <QuizCard/>
     </div>
   )
 }
 
-function HandleClick() {
-  console.log("The button was clicked");
-  alert("You clicked the button");
-}
 
 export default Quiz

@@ -42,12 +42,12 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        onClick={HandleClick}
                         className={classNames(
                           item.current ? 'bg-gradient-to-r from-red-400 to-blue-500 ... text-white' : 'text-gray-300 bg-gradient-to-r from-gray-700 to-gray-500 ... hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
+                        onClick={activePage}
                       >
                         {item.name}
                       </a>
@@ -142,8 +142,7 @@ export default function Example() {
     </Disclosure>
   )
 }
-
-function HandleClick() {
-  item.current = true
-  console.log(item.current)
+function activePage() {
+  const currentPage = window.location.pathname;
+  console.log(currentPage, "test");
 }
