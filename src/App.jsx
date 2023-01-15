@@ -5,11 +5,12 @@ import Biographie from './components/Biographie'
 import Zusammenfassung from './components/Zusammenfassung'
 import NoPage from "./components/NoPage"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Animation from "./components/Animation"
 
 function App() {
   return (
     
-      <div className="App">
+      <div className="">
         <Navbar/>
         <BrowserRouter>
           <Routes>

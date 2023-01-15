@@ -7,22 +7,25 @@ module.exports = {
       fontFamily: {
         inter: ['inter', 'serif'],
       },
+      colors: {
+        'werid': "#A0B0B2"
+      },
       animation: {
         blob: "blob 7s infinite"
       },
       keyframes: {
         blob: {
           "0%": {
-            transform: "scale(1)"
+            transform: "translate(0px, 0px) scale(1)"
           },
           "33%": {
-            transform: "scale(1.4)"
+            transform: "translate(40px, -60px) scale(1.3)"
           },
           "66%": {
-            transform: "scale(0.8)"
+            transform: "translate(-30px, 30px) scale(0.6)"
           },
           "100%": {
-            transform: "scale(1)"
+            transform: "translate(0px, 0px) scale(1)"
           }
         }
       }

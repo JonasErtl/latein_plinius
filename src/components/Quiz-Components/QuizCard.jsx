@@ -12,14 +12,14 @@ function QuizCard() {
     {
       text: "Wer war plinius",
       options: [
-        { id: 0, text: "Ein Obdachloser", isCorrect: false },
+        { id: 0, text: "Ein Bademeister", isCorrect: false },
         { id: 1, text: "Ein Kaiser", isCorrect: false },
         { id: 2, text: "Ein Soldat", isCorrect: false },
         { id: 3, text: "Ein Schriftsteller", isCorrect: true },
       ],
     },
     {
-      text: "Wo war plinius ? hier noch viel etxt jdfaua ajdfkklajsdfkjjasdkjfajfjdkasjfkkasjfkjkasfjkjfkjsakfjkasjfkjasfkjfskajfksjakfdjaskjfkasjfkjfkasdjfkajlkajfdkl jkldsjafkjasklf askjfaklsjf klajsf dklajfkla jdfklj qaklj fklasf jklajdfkla jfklajfdklja fkl;j asljfdalsdfjaljdfaljfdasl",
+      text: "Wo war plinius ?",
       options: [
         { id: 0, text: "Los Angeles", isCorrect: false },
         { id: 1, text: "Rom", isCorrect: true },
@@ -48,8 +48,8 @@ function QuizCard() {
     {
       text: "Warum war plinius",
       options: [
-        { id: 0, text: "weil baum", isCorrect: false },
-        { id: 1, text: "weil ers kann", isCorrect: true },
+        { id: 0, text: "wegen seiner Katze", isCorrect: false },
+        { id: 1, text: "weil einfachso", isCorrect: true },
         { id: 2, text: "wegen dem Papst", isCorrect: true },
         { id: 3, text: "aufgrund der Erd-Ekliptik", isCorrect: false },
       ],
@@ -80,23 +80,23 @@ function QuizCard() {
   };
 
   return (
-    <div className="App">
+    <div className="App relative">
       {/* 1. Header  */}
-      <h1 className="text-center text-2xl">Plinius Quiz</h1>
+      <h1 className="text-center text-4xl my-7">Plinius Quiz</h1>
 
       {/* 2. Current Score  */}
-      <h2 className="text-center">Punkte: {score}</h2>
+      <h2 className="text-center mb-3 text-2xl">Punkte: {score}</h2>
 
       {/* 3. Show results or show the question game  */}
       {showResults ? (
         /* 4. Final Results */
         <div className="final-results">
-          <h1 className="text-center outline rounded">Ergebnis: </h1>
-          <h2 className="py-12">
+          <h1 className="text-center outline rounded text-2xl">Ergebnis: </h1>
+          <h2 className="py-16 text-3xl">
            Du hast {score} von {questions.length} richtig beantwortet. - (
             {(score / questions.length) * 100}%)
           </h2>
-          <button className="content-center outline rounded" onClick={() => restartGame()}>Restart game</button>
+          <button className="bg-gradient-to-r from-red-400 to-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => restartGame()}>Nochmal spielen</button>
           <Animation/>
         </div>
       ) : (
@@ -121,9 +121,9 @@ function QuizCard() {
               );
             })}
           </ul>
-          <Animation/>
         </div>
       )}
+      <Animation/>
     </div>
   );
 }
