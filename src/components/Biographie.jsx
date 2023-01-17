@@ -4,7 +4,7 @@ import Animation from './Animation'
 const Biographie = () => {
   return (
     <div>
-      <div className="bg-gradient-to-r from-white to-white h-screen pt-10">
+      <div className="bg-gradient-to-r from-white to-white h-screen pt-10 pb-10">
     <div className='bg-gradient-to-tr from-gray-50 to-werid flex justify-center mx-14 h-auto rounded shadow-xl text-gray-600 text-center text-xl'>
       <h1 className='text-center'>
         Impressum 
