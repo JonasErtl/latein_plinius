@@ -6,7 +6,7 @@ import { Bars3Icon, BellIcon, XMarkIcon, BookOpenIcon, BookmarkIcon } from '@her
 const navigation = [
   { name: 'Quiz', href: 'quiz', current: true },
   { name: 'Biographie', href: 'bio', current: false },
-  { name: 'Podcast', href: 'overview', current: false },
+  { name: 'Text', href: 'overview', current: false },
   { name: 'Impressum', href: 'impressum', current: false },
 ]
 
