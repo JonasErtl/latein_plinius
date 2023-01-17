@@ -17,7 +17,6 @@ const Zusammenfassung = () => {
       </h2>
       </div>
     </div>
-    <Animation/>
     </div>
   )
 }
