@@ -97,7 +97,6 @@ function QuizCard() {
             {(score / questions.length) * 100}%)
           </h2>
           <button className="bg-gradient-to-r from-red-400 to-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => restartGame()}>Nochmal spielen</button>
-          <Animation/>
         </div>
       ) : (
         /* 5. Question Card  */
