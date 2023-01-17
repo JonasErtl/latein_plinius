@@ -3,17 +3,17 @@ import React from 'react'
 const Impressum = () => {
   return (
     <div className="bg-gradient-to-r from-white to-white h-screen pt-10 pb-10">
-    <div className='bg-gradient-to-tr from-gray-50 to-werid flex justify-center mx-14 h-auto rounded shadow-xl text-gray-600 text-center text-xl'>
-      <h1 className='text-center'>
-        Impressum 
-      </h1>
-      <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </h2>
-      </div>
+      <h1 className='text-center text-3xl pb-4 text-gray-700'>Impressum</h1>
+    <div className='bg-gradient-to-tr from-gray-50 to-werid flex justify-center mx-14 h-auto rounded shadow-xl text-gray-600 text-center text-xl pt-5 pb-5'>
+      Bei dieser Website handelt es sich um ein von Schülern erstelltes Projekt.<br />
+      Für die Informationen auf dieser Website wird keine Gewähr übernommen.<br/>
+      Es werden keine Nutzerdaten erhoben.<br/>
+      Der Quellcode dieser Seite ist offen und unter der GPL-3.0 license lizensiert.<br/>
+    </div>
+    <div className='flex justify-center'>
+    <a href='https://github.com/JonasErtl/latein_plinius' className='bg-gradient-to-r from-red-400 to-blue-500 text-white rounded text-xl content-center mx-5 my-2 px-1'>GitHub</a>
+    <a href="mailto: Plinius-Kontakt@proton.me" className='bg-gradient-to-r from-red-400 to-blue-500 ... text-white rounded text-xl my-2 px-1'>Kontakt</a>
+    </div>
     </div>
   )
 }
