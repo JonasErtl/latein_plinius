@@ -1,7 +1,7 @@
 import React from 'react'
 import Animation from './Animation'
 
-const Zusammenfassung = () => {
+const Biographie = () => {
   return (
     <div>
       <div className="bg-gradient-to-r from-white to-white h-screen pt-10 pb-10">
@@ -21,4 +21,4 @@ const Zusammenfassung = () => {
   )
 }
 
-export default Zusammenfassung
+export default Biographie

@@ -10,16 +10,16 @@ function QuizCard() {
 
   const questions = [
     {
-      text: "Wer war plinius",
+      text: "Wann und wo wurde Plinius geboren ?",
       options: [
-        { id: 0, text: "Ein Bademeister", isCorrect: false },
-        { id: 1, text: "Ein Kaiser", isCorrect: false },
-        { id: 2, text: "Ein Soldat", isCorrect: false },
-        { id: 3, text: "Ein Schriftsteller", isCorrect: true },
+        { id: 0, text: "Zwischen 64 und 66 in Pompeji", isCorrect: false },
+        { id: 1, text: "Zwischen 61 und 62 in Bithyniaet Pontus", isCorrect: false },
+        { id: 2, text: "Zwischen 61 und 62 in Conum", isCorrect: true },
+        { id: 3, text: "63 n. Chr in Kiruna", isCorrect: true },
       ],
     },
     {
-      text: "Wo war plinius ?",
+      text: "",
       options: [
         { id: 0, text: "Los Angeles", isCorrect: false },
         { id: 1, text: "Rom", isCorrect: true },
