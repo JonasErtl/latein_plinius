@@ -10,9 +10,9 @@ const Impressum = () => {
       Es werden keine Nutzerdaten erhoben.<br/>
       Der Quellcode dieser Seite ist offen und unter der GPL-3.0 license lizensiert.<br/>
     </div>
-    <div className=''>
+    <div className='flex justify-center'>
     <a href='https://github.com/JonasErtl/latein_plinius' className='bg-gradient-to-r from-red-400 to-blue-500 text-white rounded text-xl content-center mx-5 my-2 px-1'>GitHub</a>
-    <a href="mailto: Plinius-Kontakt@proton.me" >Kontakt</a>
+    <a className="bg-gradient-to-r from-red-400 to-blue-500 text-white rounded text-xl content-center mx-5 my-2 px-1" href="mailto: Plinius-Kontakt@proton.me" >Kontakt</a>
     </div>
     </div>
   )
