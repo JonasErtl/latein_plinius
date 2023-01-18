@@ -34,7 +34,7 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <BookmarkIcon className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 h-8 w-8" aria-hidden="true" ></BookmarkIcon>
+                  <BookmarkIcon onClick={KeinBockMehr} className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 h-8 w-8" aria-hidden="true" ></BookmarkIcon>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -61,7 +61,7 @@ export default function Example() {
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">View notifications</span>
-                  <BookOpenIcon className="h-6 w-6" aria-hidden="true" />
+                  <BookOpenIcon onClick={KeinBockMehr} className="h-6 w-6" aria-hidden="true" />
                 </button>
 
                 {/* Profile dropdown */}
@@ -145,4 +145,7 @@ export default function Example() {
 function activePage() {
   const currentPage = window.location.pathname;
   console.log(currentPage, "test");
+}
+function KeinBockMehr(){
+  window.location.replace("https://plinius.netlify.app/overview"); 
 }
