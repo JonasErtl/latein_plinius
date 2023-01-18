@@ -46,12 +46,30 @@ function QuizCard() {
       ],
     },
     {
-      text: "Warum war plinius",
+      text: "Zu welcher Uhrzeit beginnt Plinius seinen Tag ?",
       options: [
-        { id: 0, text: "wegen seiner Katze", isCorrect: false },
-        { id: 1, text: "weil einfachso", isCorrect: true },
-        { id: 2, text: "wegen dem Papst", isCorrect: true },
-        { id: 3, text: "aufgrund der Erd-Ekliptik", isCorrect: false },
+        { id: 0, text: "Um 1 Uhr", isCorrect: false },
+        { id: 1, text: "6 Uhr Morgens", isCorrect: false },
+        { id: 2, text: "11 Uhr Morgens", isCorrect: false },
+        { id: 3, text: "Bei Tagesanbruch", isCorrect: true },
+      ],
+    },
+    {
+      text: '"Clausae fenaestrae manent": Begründe warum',
+      options: [
+        { id: 0, text: "Weil er eine Sonnenallergie hat.", isCorrect: false },
+        { id: 1, text: "Weil ihn das Licht beim ausruhen stört.", isCorrect: false },
+        { id: 2, text: "Da so der Geist frei von Zerstreuung ist.", isCorrect: true },
+        { id: 3, text: "Um Belästigung durch das Volk zu vermeiden.", isCorrect: false },
+      ],
+    },
+    {
+      text: 'Von wem wurde Plinus adoptiert ?',
+      options: [
+        { id: 0, text: "Von seiner Mutter.", isCorrect: false },
+        { id: 1, text: "Von seinem Onkel", isCorrect: false },
+        { id: 2, text: "Von seiner Tante", isCorrect: true },
+        { id: 3, text: "Von seinem Großvater", isCorrect: false },
       ],
     },
   ];
@@ -100,7 +118,7 @@ function QuizCard() {
         </div>
       ) : (
         /* 5. Question Card  */
-        <div className="question-card">
+        <div className="question-card text-gray-300">
           {/* Current Question  */}
           <h2>
             Frage: {currentQuestion + 1} von {questions.length}

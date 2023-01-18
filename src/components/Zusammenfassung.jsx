@@ -1,24 +1,16 @@
-import React from 'react'
-import Animation from './Animation'
-
-const Biographie = () => {
+const Zusammenfassung = () => {
   return (
-    <div>
-      <div className="bg-gradient-to-r from-white to-white h-screen pt-10 pb-10">
-    <div className='bg-gradient-to-tr from-gray-50 to-werid flex justify-center mx-14 h-auto rounded shadow-xl text-gray-600 text-center text-xl'>
-      <h1 className='text-center'>
-        Impressum 
-      </h1>
-      <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </h2>
-      </div>
+    <div className="bg-gradient-to-r from-white to-gray-200 h-screen pt-10 pb-10">
+      <h1 className='text-center text-3xl pb-4 text-gray-700'>Plinius an Fuscus</h1>
+    <div className='bg-gradient-to-tr from-gray-50 to-werid flex justify-center mx-14 h-auto rounded shadow-xl text-gray-600 text-center text-xl pt-5 pb-5'>
+    Du fragst, wie ich im Sommer meinen Tag auf meinem Tusculum einteile. Ich wache auf, wenn ich mag, meistens um die erste Tagesstunde, oft früher, später selten. Die Fensterläden bleiben geschlossen. Denn ausnehmend wird der Geist durch die Stille und Finsternis genährt. Zurückgezogen von allem, was zerstreut, frei und mir selbst überlassen, folge ich mit dem Geist nicht den Augen, sondern dem Geist mit den Augen, die immer sehen, was der Geist sieht, sooft sie nicht auf etwas anderes gerichtet sind. Ich durchdenke, was ich gerade in Arbeit habe, ich durchdenke es, wie einer der schreibt und nachgebessert, bald weniger, bald mehr, je nachdem, ob es sich schwer oder leicht ausarbeiten oder im Gedächtnis behalten ließ. Ich rufe den Schreiber und diktiere, nachdem ich den Tag hereingelassen habe, was ich entworfen habe: er geht, wird wieder gerufen und wieder weggeschickt. Um zehn oder elf Uhr (denn ich binde mich an keine gewisse und bestimmte Zeit) begebe ich mich, je nachdem das Wetter ist, auf die Terrasse oder in den bedeckten Seiten Gang, vollendete und diktiere das übrige. Ich besteige den Wagen. Auch hier beschäftige ich mich ebenso, wie im Gehen oder Liegen. Die Geistesbeschäftigung dauert fort, durch die Veränderung selbst belebt: Ich schlafe wieder ein wenig, gehe dann wieder, hierauf lese ich eine lateinischen oder griechische Rede laut und mit Anstrengung, nicht so wohl der Stimme als des Magens wegen, obgleich auch jene dadurch gestärkt wird. Ich gehe wieder, salbe mich, treibe eine körperliche Übung, bade. Beim Essen wird, wenn ich mit meiner Frau oder in kleiner Gesellschaft bin, aus einem Buch vorgelesen. Nach Tisch kommen die Schauspiele oder ein Lautenschläger; hierauf gehe ich mit meinen Leuten spazieren, unter die ich sehr unterrichtete zähle. So wird der Abend unter verschiedenen Gesprächen zugebracht, und auch der längste Tag vergeht mir schnell. <br/><br/>
+    <br/>Quaeris, quemadmodum in Tuscis diem aestate disponam. Evigilo, cum libuit, plerumque circa horam primam, saepe ante, tardius raro. Clausae fenestrae manent; mire enim silentio et tenebris ab iis, quae avocant, abductus et liber et mihi relictus, non oculos animo, sed animum oculis sequor, qui eadem, quae mens, vident, quotiens non vident alia. (2) Cogito, si quid in manibus, cogito ad verbum scribenti emendantique similis, nunc pauciora nunc plura, ut vel difficile vel facile componi tenerive potuerunt. Notarium voco et die admisso, quae formaveram, dicto; abit rursusque revocatur rursusque dimittitur. (3) Ubi hora quarta vel quinta - neque enim certum dimensumque tempus -, ut dies suasit, in xystum me vel cryptoporticum confero, reliqua meditor et dicto. Vehiculum ascendo. Ibi quoque idem, quod ambulans aut iacens; durat intentio mutatione ipsa refecta. Paulum redormio, dein ambulo, mox orationem Graecam Latinamve clare et intente non tam vocis causa quam stomachi lego; pariter tamen et illa firmatur. (4) Iterum ambulo, ungor, exerceor, lavor. Cenanti mihi, si cum uxore vel paucis, liber legitur; post cenam comoedia aut lyristes; mox cum meis ambulo, quorum in numero sunt eruditi. Ita variis sermonibus vespera extenditur, et quamquam longissimus dies bene conditur. Non numquam ex hoc ordine aliqua mutantur; nam, si diu iacui vel ambulavi, post somnum demum lectionemque non vehiculo sed, quod brevius quia velocius, equo gestor. Interveniunt amici ex proximis oppidis, partemque diei ad se trahunt interdumque lasso mihi opportuna interpellatione subveniunt. (6) Venor aliquando, sed non sine pugillaribus, ut, quamvis nihil ceperim, non nihil referam. Datur et colonis, ut videtur ipsis, non satis temporis, quorum mihi agrestes querelae litteras nostras et haec urbana opera commendant. Vale. 
+    </div>
+    <div className='flex justify-center'>
+    <a href="https://www.gottwein.de/Lat/plin/plin09.php">Gottwein</a>
     </div>
     </div>
   )
 }
 
-export default Biographie
+export default Zusammenfassung
